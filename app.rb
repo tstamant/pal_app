@@ -1,5 +1,14 @@
 require 'sinatra'
 
 get '/' do
- 'tony says -- Yaba daba do!'
+  erb :index
 end
+
+get '/about' do
+  erb :about
+end
+
+get '/palindrome' do
+  erb :palindrome
+end
+ 
